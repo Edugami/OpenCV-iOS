@@ -2,12 +2,14 @@
 
 OpenCV 4.9.0 framework for iOS (arm64 + Simulator arm64 + Simulator x86_64). Added for use by [react-native-fast-opencv](https://github.com/lukaszkurantdev/react-native-fast-opencv) library.
 
-### Installation with Cocoapods 
+This fork includes the ArUco module.
 
-Just add line in your Podfile: 
+### Installation with Cocoapods
+
+Just add line in your Podfile:
 
 ```
-pod 'FastOpenCV-iOS'
+pod 'Edugami-OpenCV-iOS'
 ```
 
 ### Compilation
@@ -15,16 +17,16 @@ pod 'FastOpenCV-iOS'
 This `xcframework` has been compiled using following command:
 
 ```
-python3 opencv-4.9.0/platforms/apple/build_xcframework.py \               
+python3 opencv-4.9.0/platforms/apple/build_xcframework.py \
   --out ./opencv-build \
   --iphoneos_archs=arm64 \
   --iphonesimulator_archs=arm64,x86_64 \
   --iphoneos_deployment_target=13 \
   --disable-bitcode \
   --build_only_specified_archs \
-  --without calib3d --without dnn --without flann \                           
-  --without gapi --without highgui --without java \        
-  --without js --without ml --without objc \                            
+  --without calib3d --without dnn --without flann \
+  --without gapi --without highgui --without java \
+  --without js --without ml --without objc \
   --without objdetect --without python --without stitching \
   --without ts --without video --without world \
   --without dpm --without face --without fuzzy \
@@ -39,11 +41,11 @@ python3 opencv-4.9.0/platforms/apple/build_xcframework.py \
   --without cudalegacy --without cudaobjdetect --without cudaoptflow \
   --without cudawarping --without cudev --without shape \
   --without superres --without videostab --without ccalib \
-  --without structured_light --without tracking --without aruco \
+  --without structured_light --without tracking \
   --without bgsegm --without cvv
 ```
 
-### Instalation Manually 
+### Instalation Manually
 
 Download and add `opencv2.xcframework` to your project
 
@@ -68,7 +70,3 @@ Also add following libs :
 ## OpenCV README
 OpenCV: open source computer vision library
 Homepage:		http://opencv.org
-
-
-
-

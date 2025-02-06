@@ -1,8 +1,8 @@
 Pod::Spec.new do |s|
-  s.name         = "FastOpenCV-iOS"
-  s.version      = "1.0.4"
+  s.name         = "Edugami-OpenCV-iOS"
+  s.version      = "1.0.5"
   s.summary      = "OpenCV (Computer Vision) for iOS."
-  s.homepage     = "https://github.com/lukaszkurantdev/fastopencv-ios.git"
+  s.homepage     = "https://github.com/Edugami/OpenCV-iOS.git"
   s.description  = <<-DESC
     OpenCV: open source computer vision library
 
@@ -15,7 +15,7 @@ Pod::Spec.new do |s|
     Also available for downloading here - http://sourceforge.net/projects/opencvlibrary/files/opencv-ios/
     .
               DESC
-                  
+
   s.license      = { :type => 'BSD', :file => 'LICENSE',
     :text => <<-LICENSE
     IMPORTANT: READ BEFORE DOWNLOADING, COPYING, INSTALLING OR USING.
@@ -60,8 +60,8 @@ Pod::Spec.new do |s|
     }
   s.author       = "opencv.org"
 
-  s.source       = { 
-    :git => "https://github.com/lukaszkurantdev/fastopencv-ios.git", 
+  s.source       = {
+    :git => "https://github.com/Edugami/OpenCV-iOS.git",
     :tag => "#{s.version}"
   }
 
